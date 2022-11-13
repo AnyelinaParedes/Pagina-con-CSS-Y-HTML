@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>Prueba</title>
+    <script>
+      function resultado() {
+        var p1, p2, p3, p4, p5, p6, p7, nota;
+
+        if (document.getElementById("p11").checked == true) {
+          p1 = 1;
+        } else {
+          p1 = 0;
+        }
+
+        if (document.getElementById("p22").checked == true) {
+          p2 = 1;
+        } else {
+          p2 = 0;
+        }
+
+        if (document.getElementById("p33").checked == true) {
+          p3 = 1;
+        } else {
+          p3 = 0;
+        }
+
+        if (document.getElementById("p44").checked == true) {
+          p4 = 1;
+        } else {
+          p4 = 0;
+        }
+        if (document.getElementById("p55").checked == true) {
+          p5 = 1;
+        } else {
+          p5 = 0;
+        }
+
+        if (document.getElementById("p66").checked == true) {
+          p6 = 1;
+        } else {
+          p6 = 0;
+        }
+
+        nota = p1 + p2 + p3 + p4 + p5 + p6 + p7;
+        alert(" Aciertos: " + nota);
+        location.reload();
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Instroduccion </h2>
+    <h2> Lea cuidadosamente los siguientes enunciados. Selecione la respuesta correcta.</h2>
+    <H2>Al terminar preseione el  boton de  resultado, en el cual se le marcara  rojo  las incorrectas y las correcta de color verder.</H2>
+    <hr />
+    <form style="font: normal 16px sans-serif">
+      <p>¿Qué No Debo Hacer Al Operar La Máquina? </p>
+      <p onclick="this.style.color='#00FF00'">
+        <input type="radio" name="pregunta1" id="p11" /> Subirme encima de la
+        maquinaria
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta1" id="p12" /> Usar del EPP
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta1" id="p13" /> Revisar de que la
+        maquina está conectada
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta1" id="p14" /> Ningunas de las
+        anteriores
+      </p>
+
+      <p>Tener una área de trabajo seguro es :</p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta2" id="p21" /> A.
+      </p>
+      <p onclick="this.style.color='#00FF00'">
+        <input type="radio" name="pregunta2" id="p22" /> B.
+      </p>
+
+      <p>
+        ¿Qué Botón Debo De Marcar Para Encender La Máquina? 
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta3" id="p31" /> Blanco
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta3" id="p32" /> Negro
+      </p>
+      <p onclick="this.style.color='#00FF00'">
+        <input type="radio" name="pregunta3" id="p33" /> Verde
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta3" id="p34" /> Amarillo
+      </p>
+
+      <p>
+        ¿A qué lado debo de girar la perrilla para disminuir la velocidad? 
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta4" id="p41" /> Derecha
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta4" id="p42" />Ambos lado
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta4" id="p43" /> No hay palanca
+      </p>
+      <p onclick="this.style.color='#00FF00'">
+        <input type="radio" name="pregunta4" id="p44" /> Izquierda
+      </p>
+
+      <p>¿Qué Botón Sirve Para Parar La Máquina? </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta5" id="p51" /> Rojo
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta5" id="p52" />Cris
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta5" id="p53" /> Azul
+      </p>
+      <p onclick="this.style.color='#00FF00'">
+        <input type="radio" name="pregunta5" id="p54" /> Verde
+      </p>
+
+      <p>¿Después De Que Termina La Jornada De Trabajo Que Debo Hacer?</p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta6" id="p61" /> Tensar las mallas
+        transportadoras y las bandas en poleas
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta6" id="p62" />Esperar unos minutos a
+        que el deshidratador se enfríe
+      </p>
+      <p onclick="this.style.color='#FF0000'">
+        <input type="radio" name="pregunta6" id="p63" /> Con una escobetilla o
+        cepillo de cerdas largas quite los restos de producto atorado entre las
+        mallas.
+      </p>
+      <p onclick="this.style.color='#00FF00'">
+        <input type="radio" name="pregunta6" id="p64" /> Limpiar inmediatamente
+        la maquina
+      </p>
+      <hr />
+
+      <p>
+        <input
+          type="button"
+          value=" R E S U L T A D O "
+          onclick="resultado()"
+        />
+      </p>
+    </form>
+  </body>
+</html>
